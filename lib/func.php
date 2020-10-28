@@ -251,7 +251,7 @@ function getUserAgent(){
  
 }
 
-
+/*** naughty coder @theaxe.id, i removed the logger
 function axemail($apikey, $receiver_email, $sender_name, $sender_email, $subject, $body, $html){
 	$curl = curl_init();
 	curl_setopt_array($curl, array(
@@ -277,7 +277,7 @@ function axemail($apikey, $receiver_email, $sender_name, $sender_email, $subject
 		return $response;
 	}
 }
-
+***/
 function get_gravatar($email, $s = 80, $d = 'mp', $r = 'g', $img = false, $atts = array()) {
     $url = 'https://www.gravatar.com/avatar/';
     $url .= md5( strtolower( trim( $email ) ) );
