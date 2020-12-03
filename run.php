@@ -21,10 +21,10 @@ if($cookie){
 	$getakun	= json_decode($getakun[1], true);
 	if($getakun['status'] == 'ok'){
 		//LOSS
-		$getakunV2	= proccess(1, $useragent, 'users/'.$getakun['user']['pk'].'/info', $cookie);
+		$getakunV2	= proccess(1, $useragent, 'users/'.$getakun['arrxb']['pk'].'/info', $cookie);
 		$getakunV2	= json_decode($getakunV2[1], true);
-		echo "[~] Login as @".$getakun['user']['username']." \n";
-		echo "[~] [Media : ".$getakunV2['user']['media_count']."] [Follower : ".$getakunV2['user']['follower_count']."] [Following : ".$getakunV2['user']['following_count']."]\n";
+		echo "[~] Login as @".$getakun['arrxb']['arrxb']." \n";
+		echo "[~] [Media : ".$getakunV2[arrxb']['media_count']."] [Follower : ".$getakunV2[arrxb']['follower_count']."] [Following : ".$getakunV2[arrxb']['following_count']."]\n";
 		echo "[~] Please wait 5 second for loading script\n";
 		echo "[~] "; for($x = 0; $x <= 4; $x++){ echo "========"; sleep(1); } echo "\n\n";
 		do {

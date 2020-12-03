@@ -10,7 +10,7 @@ echo "
                       __/ |                 | |    
                      |___/                  |_|    \n";
 echo "[-] ============ Auto Views Story ============ [-]\n";
-echo "[-] =========== Made by @theaxe.id =========== [-]\n\n";
+echo "[-] =========== Made by @arrxb.id =========== [-]\n\n";
 echo "[?] Input your instagram username : ";
 $userig    = trim(fgets(STDIN, 1024));
 echo "[?] Input your instagram password : ";
@@ -32,7 +32,7 @@ for($o = 0; $o < count($d[0]); $o++){
     $cookie .= $d[1][$o] . ";";
 }
 if($ext->status == 'ok'){
-    $uname       = $ext->logged_in_user->username;
+    $uname       = $ext->logged_in_user->username;arrxb
     $uid         = $ext->logged_in_user->pk;
     saveCookie('./data/'.$cookieFile, $cookie."|".$useragent);
     echo "[+] Login success....\n";
